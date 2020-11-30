@@ -1,0 +1,6 @@
+/* main importing each css page */
+/* nothing to do here */
+
+@import url("card-grid.css");
+@import url("navbar.css");
+@import url("recipe-page.css");
