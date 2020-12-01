@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css" />
-    <title>Document</title>
+    <title>recipe-mockoup</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.make-mobile.de/webportal/assets/images/favicon/favicon-32x32_fingerprint.png">
 </head>
 
-<body>
+<body> 
+
+
+
+<!-- 
     <div class="container">
         <div class="col-md-12">
             <div class="row">
@@ -17,9 +23,192 @@
                 <div class="col-md-9">Main Content</div>
             </div>
         </div>
+    </div> 
+
+-->
+
+
+
+<div class="wrapper">
+
+    <!-- This is where the sidebar DEMO comes from: https://bootstrapious.com/p/bootstrap-sidebar -->
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3 id="sidebarHeader">Bootstrap Sidebar</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Dummy Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+    </nav>
+
+    <!-- Page Content -->
+     <div id="content">
+
+            <!-- NAV STARTS HERE  -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+
+                </div>
+            </nav>
+            <!-- NAV ENDS HERE  -->
+
+
+            <!-- PAGE CONTENT STARTS HERE  --> 
+            <div class="container-fluid">
+
+              <div class="row"  > 
+<!--                 <div class="col-2">
+
+                  <div class="sidebar">
+                    <h3 id="sidebar">Nav 
+                    </h3>
+                  </div>
+                </div> -->
+                <div class="col-10 mx-auto mainColumn">
+                  <div class="content-section text-center">
+                    <div class="card cardStyling mx-auto">
+                      <!-- START OF THE Recipe-Wrapper-Element -->
+                      <div class="card-body recipe_Wrapper">
+                        <div class="row">
+                          <div class="col">
+                            <div class="title-section">
+                              <h3>Recipe 1 - Details Page</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="card-text description mx-auto">description description description description description description description description.</p>
+                        <a href="#top">
+                          <div class="imageContainer">
+
+                            <img class="card-img-top" src="https://www.snoopkraam.de/wp-content/uploads/2015/05/Snoopkraam_Startbild5.jpg" alt="Card image cap">
+
+                            <span class="hoverTitle"><b>Recipe Number 1</b></br>(Click to see details)</span>
+
+                          </div>
+                        </a>
+                        <div class="mt-4">
+                          <div class="table-responsive-md">
+                            <!-- Table with ingredients START-->
+                            <table class="table  table-striped table-hover ">
+                              <thead class="thead-light">
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- Table with ingredients END-->
+                          </div>
+
+                        </div>
+
+                        <!-- Button with alert -->
+                        <!-- share Buttons: https://codepen.io/JacobLett/pen/NxYOoO?editors=1000 -->
+
+                        <a href="#" class="btn btn-primary buttonCustomization alertWindowLocation">Share this recipe <br>with your friends<br> (JS Function)</a>
+
+                      </div>
+                    </div>
+
+                  </div><!-- end of the Recipe-Wrapper-Element -->
+
+                </div>
+
+              </div>
+            </div>  
+            <!-- END OF FLUID CONTAINER  -->
+
+
+    <!-- PAGE CONTENT ENDS HERE  -->
+
     </div>
 
+        
+        
 
+ 
+
+</div>     <!-- END OF WRAPPER -->
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

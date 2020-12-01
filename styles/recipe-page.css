@@ -1,1 +1,91 @@
 /* css for each recipe page */
+
+
+
+.cardStyling {
+  max-width: 900px;
+}
+.mainColumn {
+  max-width: 950px;
+}
+.description {
+  max-width: 480px;
+  color: grey;
+}
+
+/* IMAGE-HOVER-EFFECT START */
+.imageContainer {
+  overflow: hidden;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.imageContainer:hover:after,
+.imageContainer:hover:before {
+  transform: rotateZ(0);
+}
+
+.imageContainer:after,
+.imageContainer:before {
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform-origin: 100% 0;
+  transform: rotateZ(90deg);
+}
+.imageContainer:after,
+.imageContainer:before {
+  content: "";
+}
+
+.imageContainer .hoverTitle,
+.imageContainer:after,
+.imageContainer:before {
+  width: 100%;
+  transition: all 0.3s ease 0s;
+}
+
+.imageContainer:after {
+  top: auto;
+  bottom: 0;
+  transform-origin: 0 100%;
+}
+
+.imageContainer .hoverTitle {
+  font-size: 19px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px #004cbf;
+  bottom: 20px;
+  left: 10px;
+  opacity: 0;
+  z-index: 2;
+  transform: scale(0);
+  transition: all 0.5s ease 0.2s;
+  margin: 0;
+  position: absolute;
+}
+
+.imageContainer:hover .hoverTitle {
+  opacity: 1;
+  transform: scale(1);
+}
+/* IMAGE-HOVER-EFFECT END */
+
+/* Button Styling START */
+.btn-primary {
+  color: #fff;
+  background-color: var(--color2);
+  border-color: var(--color2);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #26608ade;
+  border-color: #26608ade;
+}
+/* Button Styling END */
