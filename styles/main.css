@@ -12,6 +12,9 @@
   --color3: #fcb07e;
 }
 
+#content {
+    width: 100%
+}
 
 .col-2 {
   background-color: var(--color2);
