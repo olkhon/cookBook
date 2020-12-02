@@ -36,6 +36,12 @@ function displayHeadlineOne() {
     document.getElementById("recipeOne").appendChild(headline);
 }
 
+
+function removeHeadlineOne() {
+    var headlineDiv = document.getElementById("recipeOne");
+    headlineDiv.removeChild(headlineDiv.childNodes[0]);
+}
+
 function displayHeadlineTwo() {
 
     var headline = document.createElement("h5"); // Create h5 element
@@ -85,3 +91,33 @@ function displayHeadlineSix() {
 
 
 /* mouse out functions -> to do */
+
+function removeHeadlineOne() {
+    var headlineDiv = document.getElementById("recipeOne");
+    headlineDiv.removeChild(headlineDiv.childNodes[0]);
+}
+
+function removeHeadlineTwo() {
+    var headlineDiv = document.getElementById("recipeTwo");
+    headlineDiv.removeChild(headlineDiv.childNodes[0]);
+}
+
+function removeHeadlineThree() {
+    var headlineDiv = document.getElementById("recipeThree");
+    headlineDiv.removeChild(headlineDiv.childNodes[0]);
+}
+
+function removeHeadlineFour() {
+    var headlineDiv = document.getElementById("recipeFour");
+    headlineDiv.removeChild(headlineDiv.childNodes[0]);
+}
+
+function removeHeadlineFive() {
+    var headlineDiv = document.getElementById("recipeFive");
+    headlineDiv.removeChild(headlineDiv.childNodes[0]);
+}
+
+function removeHeadlineSix() {
+    var headlineDiv = document.getElementById("recipeSix");
+    headlineDiv.removeChild(headlineDiv.childNodes[0]);
+}
