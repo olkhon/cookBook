@@ -148,8 +148,15 @@ ul ul a {
     margin: 1%;
 }
 
-.card {
+.card,
+.card-text,
+.card-title {
     align-items: center;
+}
+
+.card-text,
+.card-title {
+    text-align: center;
 }
 
 .card-footer {
