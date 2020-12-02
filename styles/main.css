@@ -140,4 +140,19 @@ ul ul a {
     padding: 1em;
     max-width: 250px;
     height: auto;
+    margin: 1em;
+}
+
+.first-row-recipes,
+.second-row-recipes {
+    margin: 1%;
+}
+
+.card {
+    align-items: center;
+}
+
+.card-footer {
+    align-self: center;
+    background: white;
 }
