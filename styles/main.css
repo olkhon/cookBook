@@ -155,7 +155,8 @@ ul ul a {
 }
 
 .card-text,
-.card-title {
+.card-title,
+#recipeFive {
     text-align: center;
 }
 
