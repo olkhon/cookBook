@@ -27,10 +27,10 @@ for (let index = 0; index < cards.length; index++) {
     const card = cards[index];
     card.addEventListener("mouseenter", (event) => {
         const h5Tag = event.target.childNodes[1];
-        h5Tag.style.visibility = "visible";
+        h5Tag.style.display = "block";
     });
     card.addEventListener("mouseleave", (event) => {
         const h5Tag = event.target.childNodes[1];
-        h5Tag.style.visibility = "hidden";
+        h5Tag.style.display = "none";
     });
 }
